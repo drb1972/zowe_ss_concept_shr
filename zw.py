@@ -61,14 +61,6 @@ def list_config_values():
 
 
 # list_config_defaults
-# args: 
-# -----
-# returns:
-#    zosmf defaults
-# zosmf: b043.zosmf
-# ssh:   b043.ssh  
-# zftp:  ca32.zftp 
-# tso:   tso    
 def list_config_defaults():
     command=f'zowe config list defaults'
     sto, ste, rc = execute_command(command)
