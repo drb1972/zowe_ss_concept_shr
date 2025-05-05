@@ -46,20 +46,6 @@ def execute_command(command):
 
 
 # list_config_profiles
-# args: 
-# -----
-# returns:
-#    zosmf list
-# b043
-# b043.zosmf      
-# b043.ssh        
-# b043_apiml      
-# b043_apiml.zosmf
-# r133
-# r133.zosmf      
-# r133.ssh        
-# r133_apiml      
-# r133_apiml.zosmf
 def list_config_profiles():
    command=f'zowe config profiles'
    print(command)
@@ -68,30 +54,6 @@ def list_config_profiles():
 
 
 # list_config_values
-# args: 
-# -----
-# returns:
-#    zosmf 
-# {
-#   "success": true,
-#   "exitCode": 0,
-#    ...
-#   "stderr": "",
-#   "data": {
-#     "profiles": {
-#       "b043": {
-#         "properties": {
-#           "host": "B043.lvn.broadcom.net",
-#           "user": "(secure value)",
-#           "password": "(secure value)"
-#         },
-#         "secure": [
-#           "user",
-#           "password"
-#         ],
-#         "profiles": {
-#           "zosmf": {
-#             "type": "zosmf",
 def list_config_values():
     command=f'zowe config list --rfj'
     sto, ste, rc = execute_command(command)
