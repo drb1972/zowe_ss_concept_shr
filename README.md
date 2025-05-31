@@ -1,7 +1,4 @@
 # zowe_ss_concept_shr
-
-## Draft of the Python & Mainframe White Paper
-- [PDF](./Python_&_Mainframe_Draft.pdf)
   
 ## Requirements
 - Zowe CLI
